@@ -198,10 +198,29 @@ $ sudo pip install dpkt
 2. sniff 
 3. dissect and 
 4. forge network packets
-``` 
+```
+
+- It's a CLI utility tool
+
 This capability allows construction of tools that can `probe, scan or attack networks`.
 
 ### Installing scapy
 ```bash
 $ sudo pip install scapy
+```
+
+### To Run it
+```bash
+$ sudo scapy
+```
+
+### Reading files
+- `Scapy` can read pcap files and write them to another pcap file
+
+- Sample output
+```bash
+>>> rdpcap('wlo1-capture.pcap')
+<wlo1-capture.pcap: TCP:1491 UDP:1782 ICMP:0 Other:2>
+>>> 
+
 ```
